@@ -13,7 +13,7 @@
 body {
     height: 100vh;
     width: 100vw;
-    background-image: url(/imagens/backgroun-imperio.jpg);
+    background-image: url(../../imagens/background-imperio.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
