@@ -12,7 +12,7 @@
 /* Configuração do corpo do site */
 body {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: url(../../imagens/background-imperio.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -128,7 +128,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 22%;
+    margin-top: 28%;
     height: 50px;
     width: 100%;
 }
@@ -143,50 +143,53 @@ footer p {
 @media screen and (max-width:1440px) {
 /* Rodapé do site */
     footer {
-        margin-top: 16%;
+        margin-top: 25%;
     }
 }
 
 /* Telas de 1280 px */
 @media screen and (max-width:1280px) {
-    footer {
-        margin-top: 17%;
-    }
+/* Rodapé do site */
+footer {
+    margin-top: 32%;
+}
 }
 
 /* Telas 1024px */
 @media screen and (max-width:1024px) {
-    footer {
-        margin-top: 25%;
-    }
+/* Configurações do container do formulario */
+#container {
+    margin-top: 10vh;
+}
+
+/* Rodapé do site */
+footer {
+    display: none;
+}
 }
 
 /* Telas de 834px */
 @media screen and (max-width:834px) {
-    footer {
-        margin-top: 62%;
-    }
+/* Rodapé do site */
+footer {
+    display: none;
+}
 }
 
 /* Tela de 768px */
 @media screen and (max-width:768px) {
-    footer {
-        margin-top: 48%;
-    }
+/* Rodapé do site */
+footer {
+    display: none;
+}
 }
 
-/* Tela de 500px */
-@media screen and (max-width:500px) {
+/* Telas de 428px */
+@media screen and (max-width:428px) {
 /* Configurações do container do formulario */
 #container {
     height: 380px;
-    width: 360px;
-}
-
-/* Configurações do formulario */
-#formulario {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    width: 400px;
 }
 
 /* titulo do formulario */
@@ -196,45 +199,42 @@ h1 {
 
 /* configurações dos labels e inputs */
 #formulario label, input {
-    width: 90%;
-    padding: 8px;
-}
-
-/* Configurações dos labels individuais*/
-label {
-    font-size: 20px;
+    width: 80%;
+    padding: 12px;
 }
 
 /* configurações dos inputs individuais*/
 input {
-    color: white;
-    border-radius: 0;
     font-size: 16px;
-    border-bottom: 1px solid white;
-    background-color: transparent;
-    margin-bottom: 20px;
+}
 }
 
-/* Botão do formulario */
-#formulario #bnt {
-    margin-bottom: 25px;
+/* Telas de 414px */
+@media screen and (max-width:414px) {
+/* Configurações do container do formulario */
+#container {
+    height: 380px;
+    width: 360px;
+}
 }
 
-/* Texto do formulario transição */
-span a:hover {
-    text-decoration: none;
-    transform: translateX(0%);
+/* Telas de 375px */
+@media screen and (max-width:375px) {
+/* Configurações do container do formulario */
+#container {
+    height: 360px;
+    width: 340px;
 }
 
-/* Rodapé do site */ 
-footer {
-    margin-top: 62%;
+/* titulo do formulario */
+h1 {
+    font-size: 20px;
 }
 }
 
 /* Telas de 360px */ 
 @media screen and (max-width:360px) {
-    /* Configurações do container do formulario */
+/* Configurações do container do formulario */
 #container {
     height: 360px;
     width: 340px;
@@ -250,17 +250,13 @@ footer {
 h1 {
     font-size: 22px;
 }
-
-/* Rodapé do site */ 
-footer {
-    margin-top: 55%;
-}
 }
 
 /* Telas de 320px */ 
 @media screen and (max-width:320px) {
 /* Configurações do container do formulario */
 #container {
+    margin-top: -65px;
     height: 350px;
     width: 300px;
 }
@@ -291,9 +287,4 @@ h1 {
 span {
     font-size: 14px;
 }
-
-/* Rodapé do site */ 
-footer {
-    margin-top: 60%;
-} 
 }
