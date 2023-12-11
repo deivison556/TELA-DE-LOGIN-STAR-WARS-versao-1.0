@@ -1,0 +1,299 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family= Oswald :wght@200;300;400;500;600;700 & display=swap');
+
+/* Resetando configurações padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Configuração do corpo do site */
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/imagens/backgroun-imperio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Configurações do container do formulario */
+#container {
+    background-color: rgba(5, 5, 5, 0.5);
+    height: 450px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(40%);
+    border-radius: 7px;
+    border: 1px solid rgb(255, 230, 0, .5);
+}
+
+/* Configurações do formulario */
+#formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    flex-direction: column;
+}
+
+/* titulo do formulario */
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 15px 0;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* configurações dos labels e inputs */
+#formulario label, input {
+    width: 75%;
+    padding: 14px;
+    border-radius: 7px;
+    text-align: left;
+}
+
+/* Configurações dos labels individuais*/
+label {
+    color: yellow;
+    font-size: 20px;
+    text-align: left;
+}
+
+/* configurações dos inputs individuais*/
+input {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(253, 253, 253);
+}
+
+/* Botão do formulario */
+#formulario #bnt {
+    margin-top: 10px;
+    width: 20%;
+    height: 30px;
+    padding: 5px;
+    background-color: rgb(255, 255, 0, .8);
+    outline: none;
+    border: 1px solid black;
+    border-radius: 18px;
+    color: black;
+    font-weight: bold;
+    transition: 1.5s;
+}
+
+#formulario #bnt:hover {
+    background-color: rgba(252, 250, 250, 0.507);
+    cursor: pointer;
+    transform: translateY(-15%);
+    transition: 1.5s;
+}
+
+/* Texto do formulario */
+span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+span a {
+    text-decoration: none;
+    color: red;
+    font-weight: 700;
+    padding-left: 8px;
+    transition: 1.5s;
+}
+
+span a:hover {
+    color: yellow;
+    cursor: pointer;
+    transition: 3s;
+    transform: translateX(10%);
+}
+
+/* Rodapé do site */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22%;
+    height: 50px;
+    width: 100%;
+}
+
+/* paragrafo do rodapé do site */
+footer p {
+    color: white;
+}
+
+/* Responsivo do site */
+/* Tela de 1440 px */
+@media screen and (max-width:1440px) {
+/* Rodapé do site */
+    footer {
+        margin-top: 16%;
+    }
+}
+
+/* Telas de 1280 px */
+@media screen and (max-width:1280px) {
+    footer {
+        margin-top: 17%;
+    }
+}
+
+/* Telas 1024px */
+@media screen and (max-width:1024px) {
+    footer {
+        margin-top: 25%;
+    }
+}
+
+/* Telas de 834px */
+@media screen and (max-width:834px) {
+    footer {
+        margin-top: 62%;
+    }
+}
+
+/* Tela de 768px */
+@media screen and (max-width:768px) {
+    footer {
+        margin-top: 48%;
+    }
+}
+
+/* Tela de 500px */
+@media screen and (max-width:500px) {
+/* Configurações do container do formulario */
+#container {
+    height: 380px;
+    width: 360px;
+}
+
+/* Configurações do formulario */
+#formulario {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* titulo do formulario */
+h1 {
+    font-size: 25px;
+}
+
+/* configurações dos labels e inputs */
+#formulario label, input {
+    width: 90%;
+    padding: 8px;
+}
+
+/* Configurações dos labels individuais*/
+label {
+    font-size: 20px;
+}
+
+/* configurações dos inputs individuais*/
+input {
+    color: white;
+    border-radius: 0;
+    font-size: 16px;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+/* Botão do formulario */
+#formulario #bnt {
+    margin-bottom: 25px;
+}
+
+/* Texto do formulario transição */
+span a:hover {
+    text-decoration: none;
+    transform: translateX(0%);
+}
+
+/* Rodapé do site */ 
+footer {
+    margin-top: 62%;
+}
+}
+
+/* Telas de 360px */ 
+@media screen and (max-width:360px) {
+    /* Configurações do container do formulario */
+#container {
+    height: 360px;
+    width: 340px;
+}
+
+/* Configurações do formulario */
+#formulario {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* titulo do formulario */
+h1 {
+    font-size: 22px;
+}
+
+/* Rodapé do site */ 
+footer {
+    margin-top: 55%;
+}
+}
+
+/* Telas de 320px */ 
+@media screen and (max-width:320px) {
+/* Configurações do container do formulario */
+#container {
+    height: 350px;
+    width: 300px;
+}
+
+/* Configurações do formulario */
+#formulario {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* titulo do formulario */
+h1 {
+    font-size: 20px;
+}
+
+/* configurações dos labels e inputs */
+#formulario label, input {
+    width: 80%;
+    font-size: 16px;
+}
+
+/* Botão do formulario */
+#formulario #bnt {
+    margin-bottom: 20px;
+}
+
+/* Texto do formulario */
+span {
+    font-size: 14px;
+}
+
+/* Rodapé do site */ 
+footer {
+    margin-top: 60%;
+} 
+}
