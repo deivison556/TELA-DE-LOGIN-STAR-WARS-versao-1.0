@@ -78,7 +78,7 @@ input {
 
 /* Botão do formulario */
 #formulario #bnt {
-    margin-top: 10px;
+    margin-top: 20px;
     width: 20%;
     height: 30px;
     padding: 5px;
@@ -228,6 +228,15 @@ input {
 }
 }
 
+/* Telas de 390px */
+@media screen and (max-width:390px) {
+/* Configurações do container do formulario */
+#container {
+    height: 380px;
+    width: 360px;
+}
+}
+
 /* Telas de 375px */
 @media screen and (max-width:375px) {
 /* Configurações do container do formulario */
@@ -239,6 +248,11 @@ input {
 /* titulo do formulario */
 h1 {
     font-size: 20px;
+}
+
+/* Botão do formulario */
+#formulario #bnt {
+    margin-bottom: -10px;
 }
 }
 
@@ -259,6 +273,11 @@ h1 {
 /* titulo do formulario */
 h1 {
     font-size: 22px;
+}
+
+/* Botão do formulario */
+#formulario #bnt {
+    margin-bottom: 10px;
 }
 }
 
