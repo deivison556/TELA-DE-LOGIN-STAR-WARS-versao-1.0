@@ -184,6 +184,16 @@ footer {
 }
 }
 
+/* Telas de 500px */ 
+@media screen and (max-width:500px) {
+/* Configurações do container do formulario */
+#container {
+    margin-top: -5vh;
+    height: 450px;
+    width: 450px;
+}
+}
+
 /* Telas de 428px */
 @media screen and (max-width:428px) {
 /* Configurações do container do formulario */
